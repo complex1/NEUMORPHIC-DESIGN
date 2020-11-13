@@ -1,0 +1,29 @@
+.color {
+  color: #333;
+}
+.tc {
+  text-align: center;
+}
+.ms {
+  margin-right: 10px;
+}
+.mx {
+  margin: 15px;
+}
+.mx-1 {
+  margin: 50px 15px;
+}
+
+.flex {
+  display: flex;
+}
+.v-c {
+  display: flex;
+  align-items: center;
+}
+input, select {
+  width: 400px;
+}
+[type="checkbox"] {
+  width: auto;
+}

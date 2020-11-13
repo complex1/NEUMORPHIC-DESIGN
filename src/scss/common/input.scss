@@ -1,0 +1,41 @@
+.n-input {
+  font-size: 1em;
+    padding: 0.5em 1em;
+    letter-spacing: 1px;
+    border: 0px solid;
+    border-radius: 0.5em;
+    background: transparent;
+    &::placeholder {
+      opacity: 0.6;
+    }
+}
+
+.n-wrap-input {
+  display: flex;
+  align-items: center;
+  padding: 1em 0em;
+  padding-right: 1em;
+  border-radius: 8px;
+  .title {
+    padding: 0em 1em;
+    .title::before {
+      position: absolute;
+      height: 100%;
+      right: 100%;
+      width: 2px;
+      background-color: black;
+    }
+  }
+
+  input {
+    flex-grow: 1;
+    color: $text-color;
+    font-size: 1em;
+    padding: 0.5em 1em;
+    letter-spacing: 1px;
+    border: 0px solid;
+    box-shadow: inset 4px 4px 4px #b7b7b7, inset -4px -4px 4px #ffffff94;
+    border-radius: 0.5em;
+    background: transparent;
+  }
+}

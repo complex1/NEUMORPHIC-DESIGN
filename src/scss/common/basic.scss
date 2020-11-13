@@ -1,0 +1,26 @@
+html,body {
+  padding: 0px;
+  margin: 0px;
+  background: $light-base;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+*:focus {
+  outline: none;
+}
+
+* {
+  letter-spacing: 2px;
+  box-sizing: border-box;
+}
+
+.n-app {
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
+}
+
+.block {
+  display: block;
+}

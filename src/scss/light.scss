@@ -1,0 +1,195 @@
+@import './light/vars.scss';
+@import './common/alert.scss';
+@import './common/avatar.scss';
+@import './common//basic.scss';
+@import './common/button.scss';
+@import './common/font.scss';
+@import './common/input.scss';
+@import './common/size.scss';
+@import './common/switch.scss';
+@import './common/text.scss';
+
+.light {
+  color: $text-color;
+  .xs {
+    font-size: 12px;
+  }
+  .s {
+    font-size: 14px;
+  }
+  .m {
+    font-size: 16px;
+  }
+  .l {
+    font-size: 18px;
+  }
+  .xl {
+    font-size: 22px;
+  }
+  &.n-app {
+    background: $light-base;
+  }
+  .n-elm {
+    background: $light-base;
+    &.n-ele-0{
+      box-shadow:  8px 8px 16px #c9c9c9, -8px -8px 16px #ffffff94;
+    }
+    &.n-ele-1 {
+      box-shadow:  8px 8px 16px #b7b7b7, -8px -8px 16px #ffffff94;
+    }
+    &.n-ele-2 {
+      box-shadow:  12px 12px 13px #c5c5c5, -12px -12px 13px #ffffff94;
+    }
+    &.n-ele-3 {
+      box-shadow:  10px 10px 20px #949494, -10px -10px 20px #ffffff94;
+    }
+    &.n-ele-4 {
+      box-shadow:  12px 12px 24px #585858, -12px -12px 24px #ffffff94;
+    }
+
+    &.n-ele-in-0{
+      box-shadow: inset 8px 8px 16px #c9c9c9, inset -8px -8px 16px #ffffff94;
+    }
+    &.n-ele-in-1 {
+      box-shadow: inset 8px 8px 16px #b7b7b7, inset -8px -8px 16px #ffffff94;
+    }
+    &.n-ele-in-2 {
+      box-shadow: inset 12px 12px 13px #c5c5c5, inset -12px -12px 13px #ffffff94;
+    }
+    &.n-ele-in-3 {
+      box-shadow: inset 10px 10px 20px #949494, inset -10px -10px 20px #ffffff94;
+    }
+    &.n-ele-in-4 {
+      box-shadow: inset 12px 12px 24px #585858, inset -12px -12px 24px #ffffff94;
+    }
+  }
+  .n-text {
+    color: $light-base;
+    &.n-text-0{
+      text-shadow:  8px 8px 16px #c9c9c9,  -8px -8px 16px #ffffff94;
+    }
+    &.n-text-1 {
+      text-shadow:  8px 8px 16px #b7b7b7, -8px -8px 16px #ffffff94;
+    }
+    &.n-text-2 {
+      text-shadow:  12px 12px 13px #c5c5c5, -12px -12px 13px #ffffff94;
+    }
+    &.n-text-3 {
+      text-shadow:  10px 10px 20px #949494, -10px -10px 20px #ffffff94;
+    }
+    &.n-text-4 {
+      text-shadow:  12px 12px 24px #585858, -12px -12px 24px #ffffff94;
+    }
+  }
+  .n-btn {
+    background-color: $light-base;
+    box-shadow: 5px 5px 5px #b7b7b7, -5px -5px 5px #ffffff82;
+    &-in {
+      box-shadow: inset 5px 5px 5px #b7b7b7, inset -5px -5px 4px #ffffff94;
+    }
+  }
+  .n-avt {
+    color: $text-color;
+    box-shadow: 5px 5px 5px #b7b7b7, -5px -5px 5px #ffffff82;
+    &-in {
+      box-shadow: inset 5px 5px 5px #b7b7b7, inset -5px -5px 4px #ffffff94;
+    }
+  }
+  .n-alert {
+    box-shadow: 5px 5px 12px #585858, -5px -5px 12px #ffffff94;
+    &-in {
+      box-shadow: inset 5px 5px 5px #585858, inset -5px -5px 5px #ffffff94;
+    }
+    &-danger {
+      border-color: $danger;
+    }
+    &-warning {
+      border-color: $warning;
+    }
+    &-success {
+      border-color: $success;
+    }
+    &-info {
+      border-color: $info;
+    }
+  }
+  .n-input {
+    color: $text-color;
+    box-shadow: inset 4px 4px 4px #b7b7b7, inset -4px -4px 4px #ffffff94;
+  }
+  [type="checkbox"].n-input {
+    box-shadow: 8px 8px 16px #b7b7b7, -8px -8px 16px #ffffff94;
+  }
+  .n-wrap-input {
+    box-shadow: 5px 5px 5px #b7b7b7, -5px -5px 5px #ffffff82;
+    input {
+      color: $text-color;
+      box-shadow: inset 4px 4px 4px #b7b7b7, inset -4px -4px 4px #ffffff94;
+    }
+  }
+  .n-wrap-in {
+    box-shadow: inset 5px 5px 5px #b7b7b7, inset -5px -5px 4px #ffffff94;
+  }
+  label.n-switch {
+    box-shadow: inset 4px 4px 4px #b7b7b7, inset -4px -4px 4px #ffffff94;
+    input[type="checkbox"]::before {
+      background-color: $danger;
+      box-shadow:  8px 8px 16px #c9c9c9, -8px -8px 16px #ffffff94;
+    }
+    input[type="checkbox"]:checked::before {
+      background-color: $success;
+    }
+  }
+  .n-slider {
+    position: relative;
+    appearance: none;
+    display: inline-block;
+    height: 1em;
+    outline: none;
+    background-color: $light-base;
+    border-radius: 2em;
+    box-shadow: inset 4px 4px 4px #b7b7b7, inset -4px -4px 4px #ffffff94;
+    &::before{
+      content: '';
+      position: absolute;
+      top: -0.7em;
+      left: -0.7em;
+      right: -0.7em;
+      bottom: -0.7em;
+      border-radius: 0.25em;
+      background-color: transparent;
+      box-shadow: 4px 4px 4px #b7b7b7, -4px -4px 4px #ffffff94;
+    }
+    &::-webkit-slider-thumb {
+      content: 'd';
+      border-radius: 50%;
+      appearance: none;
+      width: 2em;
+      height: 2em;
+      background-color: $light-base;
+      border: 2px solid $light-base;
+      box-shadow: 4px 4px 4px #b7b7b7, -2px -2px 4px #ffffff94;
+      cursor: pointer;
+      border: 0px solid;
+    }
+    &::-moz-range-thumb {
+      border-radius: 50%;
+      width: 2em;
+      height: 2em;
+      background-color: $light-base;
+      border: 2px solid $light-base;
+      box-shadow: 4px 4px 4px #b7b7b7, -4px -4px 4px #ffffff94;
+      cursor: pointer;
+      border: 0px solid;
+    }
+    &.danger::-webkit-slider-thumb {
+      background-color: $danger;
+    }
+    &.warning::-webkit-slider-thumb {
+      background-color: $warning;
+    }
+    &.success::-webkit-slider-thumb {
+      background-color: $success;
+    }
+  }
+}
