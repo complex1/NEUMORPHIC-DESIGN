@@ -18,10 +18,10 @@
       <div class="n-elm n-ele-in-4 box"></div>
     </div>
     <h2>TEXT: n-text-[0-3]</h2>
-    <p class="n-text n-text-0">HELLO WORLD</p>
-    <p class="n-text n-text-1">HELLO WORLD</p>
-    <p class="n-text n-text-2">HELLO WORLD</p>
-    <p class="n-text n-text-3">HELLO WORLD</p>
+    <p class="n-text n-text-0 no-mobile">HELLO WORLD</p>
+    <p class="n-text n-text-1 no-mobile">HELLO WORLD</p>
+    <p class="n-text n-text-2 no-mobile">HELLO WORLD</p>
+    <p class="n-text n-text-3 no-mobile">HELLO WORLD</p>
     <h2>BUTTONS</h2>
     <button class="n-btn mx">click me</button>
     <button class="n-btn n-btn-pill mx">click me</button>
@@ -157,15 +157,23 @@ p {
 }
 .box-cont {
   display: flex;
+  flex-wrap: wrap;
   padding: 30px;
   justify-content: space-between;
 }
 .box {
   height: 100px;
   width: 100px;
+  margin: 20px 0px;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .no-mobile {
+    display: none;
+  }
 }
 </style>
